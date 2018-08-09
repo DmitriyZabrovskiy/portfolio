@@ -12,6 +12,8 @@ const baseConf = (_path) => {
         index: ['babel-polyfill', './src/index/index.js'],
         portfolio: ['babel-polyfill', './src/portfolio/portfolio.js'],
         about: ['babel-polyfill', './src/about/about.js'],
+        work: ['babel-polyfill', './src/work/work.js'],
+
 
     };
 
