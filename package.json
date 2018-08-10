@@ -47,6 +47,8 @@
     "babel-polyfill": "^6.26.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "reactdom": "^2.0.0"
   }
 }
