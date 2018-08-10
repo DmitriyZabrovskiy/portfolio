@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Thepagecars from './pages/Thepagecars.jsx';
+import CarsStore from './pages/Cars-store.jsx';
 
-ReactDOM.render(<Thepagecars />, document.getElementById('app'));
+ReactDOM.render(<CarsStore />, document.getElementById('app'));
