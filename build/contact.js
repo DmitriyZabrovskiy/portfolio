@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 338);
+/******/ 	return __webpack_require__(__webpack_require__.s = 346);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3713,8 +3713,68 @@ module.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh)
 
 
 /***/ }),
-/* 125 */,
-/* 126 */,
+/* 125 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(329);
+
+/***/ }),
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(330);
+
+__webpack_require__(331);
+
+/** Select items DOM*/
+
+var menuBtn = document.querySelector('.menu-btn');
+var menu = document.querySelector('.menu');
+var menuNav = document.querySelector('.menu-nav');
+var menuBranding = document.querySelector('.menu-branding');
+var navItems = document.querySelectorAll('.nav-item');
+
+/** Set Initial State Of menu*/
+
+var showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+    if (!showMenu) {
+        menuBtn.classList.add('close');
+        menu.classList.add('show');
+        menuNav.classList.add('show');
+        menuBranding.classList.add('show');
+        navItems.forEach(function (item) {
+            return item.classList.add('show');
+        });
+
+        /** Set Menu State*/
+
+        showMenu = true;
+    } else {
+        menuBtn.classList.remove('close');
+        menu.classList.remove('show');
+        menuNav.classList.remove('show');
+        menuBranding.classList.remove('show');
+        navItems.forEach(function (item) {
+            return item.classList.remove('show');
+        });
+
+        /** Set Menu State*/
+
+        showMenu = false;
+    }
+}
+
+/***/ }),
 /* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9036,27 +9096,60 @@ module.exports = function (regExp, replace) {
 
 
 /***/ }),
-/* 329 */,
-/* 330 */,
-/* 331 */,
+/* 329 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 330 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 331 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 332 */,
 /* 333 */,
 /* 334 */,
 /* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(127);
-module.exports = __webpack_require__(339);
-
-
-/***/ }),
-/* 339 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+__webpack_require__(337);
+
+__webpack_require__(125);
+
+__webpack_require__(126);
+
+/***/ }),
+/* 337 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(127);
+module.exports = __webpack_require__(336);
 
 
 /***/ })
